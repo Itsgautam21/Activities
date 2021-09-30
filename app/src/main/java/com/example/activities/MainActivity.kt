@@ -3,6 +3,7 @@ package com.example.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.activities.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     fun onClick(view: android.view.View) {
         val intent = Intent(applicationContext, MainActivity2::class.java)
         startActivity(intent)
+        Toast.makeText(applicationContext, "Happy", Toast.LENGTH_SHORT).show()
 
     }
 }
